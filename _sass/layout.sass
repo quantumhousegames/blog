@@ -1,0 +1,44 @@
+body
+  display: flex
+  flex-direction: column
+
+article
+  flex-grow: 1
+
+body > header, body > footer
+  display: flex
+  flex-wrap: wrap
+  align-items: center
+  justify-content: space-between
+
+body > header, body > footer
+  padding: 1.5em
+
+body > article
+  padding: 3em
+
+article header
+  margin-top: 0
+  margin-bottom: 1.5em
+
+article header h1
+  font-size: 1.7em
+  margin: 0 0 .1em
+
+nav
+  margin: .5em -1em
+
+nav a
+  margin: .5em 1em
+
+body > article img, body > article .embed
+  width: 100vw
+  position: relative
+  left: 50%
+  right: 50%
+  margin-left: -50vw
+  margin-right: -50vw
+
+.embed
+  position: relative
+  padding-bottom: 56.25%

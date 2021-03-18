@@ -1,0 +1,36 @@
+title: "Quantum House Games Team Blog"
+author: "Quantum House Games"
+description: ""
+permalink: /:title/
+lang: "en"
+excerpt_separator: "\n\n\n"
+date_format: "%B %d, %Y"
+
+# Layout
+
+show_excerpts: true # show article excerpts on the home page
+show_frame: false # adds a gray frame to the site
+show_sidebar: false # show a sidebar instead of the usual header
+
+# Menu
+
+navigation: # accepts {file, title, url, icon, sidebaricon}
+  - { file: "index.html" }
+
+external: # shows a footer with social links - for available icons see fontawesome.com/icons
+  - {
+      title: Steam Store Page,
+      icon: steam,
+      url: "https://twitter.com/QHG_Team",
+    }
+  - { title: Twitter Page, icon: twitter, url: "https://twitter.com/QHG_Team" }
+  - { title: Subscribe to RSS, icon: rss, url: "/feed.xml" }
+
+mathjax: true
+
+jekyll-minifier:
+  exclude: "feed.xml"
+
+plugins:
+  - jekyll-feed
+  - jekyll-minifier
