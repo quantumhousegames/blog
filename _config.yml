@@ -19,11 +19,11 @@ navigation:
   - { file: "index.html", icon: home }
 
 external: # shows a footer with social links - for available icons see fontawesome.com/icons
-  - {
-      title: Steam Store Page,
-      icon: steam,
-      url: "https://twitter.com/QHG_Team",
-    }
+  # - {
+  #     title: Steam Store Page,
+  #     icon: steam,
+  #     url: "https://twitter.com/QHG_Team",
+  #   }
   - { title: Twitter Page, icon: twitter, url: "https://twitter.com/QHG_Team" }
   - { title: Subscribe to RSS, icon: rss, url: "/feed.xml" }
 

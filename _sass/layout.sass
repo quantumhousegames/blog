@@ -1,6 +1,25 @@
+
+@mixin scrollbars($size, $foreground-color, $background-color: mix($foreground-color, white,  80%))
+  // For Google Chrome
+  &::-webkit-scrollbar
+    width: $size
+    height: $size
+
+  &::-webkit-scrollbar-thumb
+    background: $foreground-color
+
+  &::-webkit-scrollbar-track
+    background: $background-color
+
+  // For Internet Explorer
+  &
+    scrollbar-face-color: $foreground-color
+    scrollbar-track-color: $background-color
+
 body
   display: flex
   flex-direction: column
+  @include scrollbars(.3em, black)
 
 article
   flex-grow: 1
